@@ -2,10 +2,11 @@
   "name": "creating-api-rest-ex",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/index.js",
+  "type": "commonjs",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js",
+    "dev": "nodemon server/index.js",
+    "start": "node server/index.js",
     "lint": "eslint"
   },
   "keywords": [],
@@ -17,5 +18,10 @@
     "eslint-plugin-prettier": "^4.2.1",
     "nodemon": "^2.0.22",
     "prettier": "^2.8.7"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "express": "^4.18.2",
+    "net": "^1.0.2"
   }
 }
