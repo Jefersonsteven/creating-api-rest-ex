@@ -1,11 +1,11 @@
 
 const { faker } = require('@faker-js/faker');
 
-const products = (limit) => {
-  const products = [];
+const productsData = (limit) => {
+  const productsData = [];
 
   for (let i = 0; i < limit; i++) {
-    products.push({
+    productsData.push({
       id: faker.random.numeric(6),
       image: faker.image.imageUrl(),
       name: faker.commerce.productName(),
@@ -15,7 +15,7 @@ const products = (limit) => {
     });
   }
 
-  return products;
+  return productsData;
 };
 
-module.exports = products;
+module.exports = productsData;
